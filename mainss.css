@@ -1,0 +1,153 @@
+﻿nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        float: left;
+    }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            position: relative;
+        }
+
+            nav li a img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0px;
+                box-sizing: border-box;
+            }
+
+            nav li a:hover {
+                text-shadow: 0 0 10px white;
+                -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.5);
+                transform: rotate3d(1, 2, 1, 10deg);
+                font-style: italic;
+            }
+
+.minecraft-font {
+    font-family: Arvo, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.minecraft-font-bl {
+    font-family: Arvo, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.gold-outline {
+    text-shadow: 0 0 10px gold;
+
+}
+.glow {
+    text-shadow 0 0 20px white;
+}
+
+.blue-outline {
+    text-shadow: 0 0 4px #4259e1;
+}
+
+.text-box {
+    background-color: black;
+    padding: 22px;
+    z-index: 1;
+    box-shadow: 0 -10px 10px -10px white, 10px 0 10px -10px white, -10px 0 10px -10px white;
+}
+
+.align-me {
+    text-align: center;
+}
+
+.title-font {
+    font-family: Arvo, sans-serif;
+    font-size: 30px;
+    color: white
+}
+
+.personal-statement {
+    font-family: Monocraft, sans-serif;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0px 0px 20px 0px white;
+    color: white;
+    text-align: left;
+}
+
+.bodyp {
+    font-family: Monocraft, sans-serif;
+    padding: 40px;
+    background-color: black;
+    box-shadow: 0px 0px 20px 0px white;
+    color: white;
+    text-align: left;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.slideshow {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 250px;
+    box-shadow: 0px 0px 20px 0px white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.slides {
+    display: flex;
+    flex-wrap: nowrap;
+    transform: translateX(0);
+    animation: slide 50s infinite;
+}
+
+    .slides img {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33.33% {
+        transform: translateX(-100%);
+    }
+
+    66.66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
